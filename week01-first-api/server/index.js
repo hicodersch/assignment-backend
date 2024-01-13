@@ -4,6 +4,10 @@ const port = 8080;
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
+});
+
+app.get('/teachers', function(request, response){
+    response.send('teachers are here!')
 })
 
 app.listen(port, () => {
