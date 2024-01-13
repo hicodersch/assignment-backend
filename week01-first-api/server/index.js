@@ -10,6 +10,10 @@ app.get('/teachers', function(request, response){
     response.send('teachers are here!')
 })
 
+app.get('/students', function(request, response){
+    response.send('students are here!')
+})
+
 app.listen(port, () => {
     console.log(`My first backend app is listening on port ${port}`)
 })
