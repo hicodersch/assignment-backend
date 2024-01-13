@@ -1,13 +1,15 @@
 import express from "express"
 const app = express()
 const port = 8080;
+const teachers = [];
+const students = [];
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
 });
 
 app.get('/teachers', function(request, response){
-    response.send('teachers are here!')
+    response.send(teachers)
 })
 
 app.post('/teachers', function(request, response){
@@ -15,7 +17,7 @@ app.post('/teachers', function(request, response){
 })
 
 app.get('/students', function(request, response){
-    response.send('students are here!')
+    response.send(students)
 })
 
 app.post('/students', function(request, response){
