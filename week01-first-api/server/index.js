@@ -13,7 +13,14 @@ app.get('/teachers', function(request, response){
 })
 
 app.post('/teachers', function(request, response){
-    response.send('a teacher is added')
+    const teacher = {
+        firstName: 'hi',
+        lastName: 'coders',
+    };
+
+    teachers.push(teacher);
+
+    response.send(teacher)
 })
 
 app.get('/students', function(request, response){
@@ -21,7 +28,14 @@ app.get('/students', function(request, response){
 })
 
 app.post('/students', function(request, response){
-    response.send('a student is added')
+    const student = {
+        firstName: 'hi',
+        lastName: 'coders',
+    };
+
+    students.push(student);
+
+    response.send(student)
 })
 
 
